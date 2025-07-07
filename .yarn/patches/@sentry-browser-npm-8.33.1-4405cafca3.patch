@@ -1,0 +1,5 @@
+async function lazyLoadIntegration(name, scriptNonce) {
+  throw new Error(`Use of @sentry/browser's lazyLoadIntegration function is not supported by chrisApp Extension`);
+}
+
+exports.lazyLoadIntegration = lazyLoadIntegration;
