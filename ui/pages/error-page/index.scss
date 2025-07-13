@@ -1,0 +1,21 @@
+@use "design-system";
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  height: 100%;
+}
+
+.error-page__inner-wrapper {
+  @media screen and (min-width: design-system.$screen-md-min) {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.error-page__stack {
+  max-height: calc(120px + env(safe-area-inset-top));
+  
+}
