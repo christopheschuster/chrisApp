@@ -1,0 +1,24 @@
+@use "design-system";
+
+.icon-button {
+  height: auto;
+
+  &:hover:not([disabled]) {
+    background-color: var(--color-background-muted-hover);
+    transition: background 200ms ease;
+  }
+
+  &__label {
+    max-width: 60px;
+  }
+}
+
+.icon-button-round {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include design-system.H7;
+
+  
+}
